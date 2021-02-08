@@ -17,7 +17,7 @@ import {
   OTSubscriberView,
 } from 'opentok-react-native';
 
-import * as credentials from './config'
+import * as credentials from './config';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
