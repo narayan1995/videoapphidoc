@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.subscriber {
+  margin-left: 10%;
+}
+.publisher {
+  float: right;
+  margin-right: 10%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

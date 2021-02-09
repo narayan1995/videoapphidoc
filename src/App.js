@@ -85,6 +85,7 @@ export default class App extends React.Component {
             <strong>Error:</strong> {error}
           </div>
         ) : null}
+        
         <OTSession
           apiKey={apiKey}
           sessionId={sessionId}
@@ -95,12 +96,17 @@ export default class App extends React.Component {
           <button id="videoButton" onClick={this.toggleVideo}>
             {publishVideo ? 'Disable' : 'Enable'} Video
           </button>
+          
+          <div className="publisher">
           <OTPublisher
             properties={{ publishVideo, width: 100, height: 100, }}
             onPublish={this.onPublish}
             onError={this.onPublishError}
             eventHandlers={this.publisherEventHandlers}
           />
+           </div>
+         
+         <div className="subscriber">
           <OTStreams>
             <OTSubscriber
               properties={{ width: 200, height: 200 }}
@@ -109,6 +115,8 @@ export default class App extends React.Component {
               eventHandlers={this.subscriberEventHandlers}
             />
           </OTStreams>
+          </div>
+
         </OTSession>
       </div>
     );
