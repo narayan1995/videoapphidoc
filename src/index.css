@@ -1,4 +1,4 @@
-body, html {
+/*body, html {
   background-color: gray;
 }
 .OT_subscriber {
@@ -9,5 +9,30 @@ body, html {
   float: left;
 }
 .error {
+  color: red;
+}*/
+
+body, html {
+  background-color: pink;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif
+}
+.connectionStatus {
+  padding-top: 20px;
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+.OT_subscriber {
+  margin-left: 10%;
+}
+.OT_publisher {
+  float: right;
+  margin-right: 10%;
+}
+.OTPublisherContainer {
+  width: 80vh !important;
+  height: 80vh !important;
+}
+#error {
   color: red;
 }
